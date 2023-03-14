@@ -1,8 +1,7 @@
 name: nyc_airbnb_dev
-channels:
-  - conda-forge
-  - defaults
+
 dependencies:
+  - numpy<1.24
   - mlflow=1.14.1
   - ipython=7.21.0
   - notebook=6.2.0
