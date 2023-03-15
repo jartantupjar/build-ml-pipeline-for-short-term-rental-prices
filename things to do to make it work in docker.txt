@@ -24,9 +24,14 @@ cd build-ml-pipeline-for-short-term-rental-prices
 #my wandb login
 wandb login db50d51cc8eab98afd955b07413ea8c528bf2245
 
-#eda
+
 mlflow run . -P steps=download
 mlflow run src/eda
+#the ff runs directly from release
+mlflow run https://github.com/jartantupjar/build-ml-pipeline-for-short-term-rental-prices.git \
+             -v 1.0.1 \
+             -P hydra_options="etl.sample='sample2.csv'"
+			 
 
 #to run jupyter #note the "" on ip
 jupyter notebook --ip="0.0.0.0" --allow-root --no-browser

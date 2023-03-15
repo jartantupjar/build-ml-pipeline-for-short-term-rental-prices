@@ -1,0 +1,4 @@
+Github URL
+https://github.com/jartantupjar/build-ml-pipeline-for-short-term-rental-prices
+WANDB URL
+https://wandb.ai/natraj-rajputsaldana/nyc_airbnb
